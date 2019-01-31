@@ -38,3 +38,12 @@ if __name__ == '__main__':
     for x in np.nditer(c):  
         print (x,)
 
+    #可以通过显式提醒，来强制nditer对象使用某种顺序：
+    print  ('以 C 风格顺序排序：')  
+    for x in np.nditer(a, order = 'C'):  
+        print (x,)  
+    print  ('\n')  
+    print  ('以 F 风格顺序排序：')  
+    for x in np.nditer(a, order = 'F'):  
+        print (x,)
+
