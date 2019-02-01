@@ -5,6 +5,7 @@ Created on 2019年2月1日
 '''
 
 import numpy as np
+from matplotlib import pyplot as plt 
 
 if __name__ == '__main__':
     #===========================================================================
@@ -112,5 +113,14 @@ if __name__ == '__main__':
     # 获得了和 NumPy 内建的广播支持相同的结果
     print ('x 与 y 的和：') 
     print (x + y)
+    
+    
+    x = np.arange(1,11) 
+    y =  2  * x +  5 
+    plt.title("Matplotlib demo") 
+    plt.xlabel("x axis caption") 
+    plt.ylabel("y axis caption") 
+    plt.plot(x,y)
+    plt.show()
 
     pass
